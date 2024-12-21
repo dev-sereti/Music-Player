@@ -1,0 +1,188 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Music player container */
+  .music-player {
+    width: 100%;
+    max-width: 450px;
+    background: #2c3e50;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  /* Title styling */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #1abc9c;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Player controls section */
+  .player-controls {
+    margin: 20px 0;
+  }
+  
+  .player-controls button {
+    background: #34495e;
+    border: none;
+    color: #f3f3f3;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .player-controls button:hover {
+    background: #1abc9c;
+    transform: scale(1.1);
+  }
+  
+  /* Progress bar styling */
+  .progress-container {
+    width: 100%;
+    height: 10px;
+    background: #7f8c8d;
+    border-radius: 5px;
+    margin: 15px 0;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  #progress-bar {
+    height: 100%;
+    background: #1abc9c;
+    border-radius: 5px;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  
+  /* Time display styling */
+  .time-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* File input styling */
+  #file-input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background: #34495e;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  #file-input:hover {
+    background: #1abc9c;
+    color: #2c3e50;
+  }
+  
+  /* Add to Playlist button */
+  #add-to-playlist-btn {
+    margin: 10px 0;
+    padding: 10px;
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  #add-to-playlist-btn:hover {
+    background: #16a085;
+    transform: scale(1.05);
+  }
+  
+  /* Playlist styling */
+  .playlist {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .playlist li {
+    padding: 10px;
+    background: #34495e;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .playlist li:hover {
+    background: #1abc9c;
+    color: #2c3e50;
+  }
+  
+  .playlist .active {
+    background: #1abc9c;
+    color: #2c3e50;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(26, 188, 156, 0.5);
+  }
+  
+  /* Scrollbar styling for playlist */
+  .playlist::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .playlist::-webkit-scrollbar-thumb {
+    background: #1abc9c;
+    border-radius: 3px;
+  }
+  
+  .playlist::-webkit-scrollbar-track {
+    background: #34495e;
+  }
+  
+  /* Responsive design adjustments */
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    .player-controls button {
+      font-size: 18px;
+      padding: 10px;
+      margin: 0 5px;
+    }
+  
+    #file-input,
+    #add-to-playlist-btn {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
